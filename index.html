@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <span class="spinner"></span>
+    </div>
+    <div class="front-page hidden">
+      <div class="navigation"></div>
+      <div>
+        <div class="menu">
+          <div class="webName">
+            <img src="nm.png" alt="" />
+          </div>
+          <div class="btn">
+            <button class="homebtn active" data-tab-name="homeInfo">
+              Home
+            </button>
+            <button class="aboutbtn" data-tab-name="aboutInfo">About</button>
+          </div>
+          <div id="homeInfo" class="tab-content active">
+            <div class="main">
+              <img src="Nija Mart.png" alt="" />
+              <div class="home-buttons">
+                <button class="getStarted">Get Started</button>
+                <button class="signIn">Sign In</button>
+              </div>
+            </div>
+          </div>
+          <div id="aboutInfo" class="tab-content">
+            <div class="aboutStyle">
+              <h2>Who We Are?</h2>
+              <p>
+                Nija Mart is a leading online marketplace dedicated to providing
+                customers with a seamless shopping experience. Our mission is to
+                offer a diverse range of high-quality products at competitive
+                prices, all while ensuring exceptional customer service.
+              </p>
+              <h2>Our Mission</h2>
+              <p>
+                Our mission at Nija Mart is to empower customers by providing a
+                diverse selection of products that cater to their needs while
+                delivering an unparalleled shopping experience. We strive to be
+                the go-to destination for all your shopping needs, combining
+                quality, affordability, and convenience.
+              </p>
+              <h2>Our Mission</h2>
+              <p>
+                To simplify shopping for everyone by providing a wide range of
+                products, seamless online and offline shopping experiences, and
+                reliable delivery services all at unbeatable prices.
+              </p>
+              <h2>Our Vision</h2>
+              <p>
+                To become Nigeria’s most trusted and customer-friendly shopping
+                destination, delivering value, convenience, and excellence.
+              </p>
+              <h2>What We Offer</h2>
+              <ul>
+                <li>
+                  🛒 A vast collection of groceries, electronics, clothing, and
+                  household items
+                </li>
+                <li>
+                  💳 Secure payment options and smooth checkout experience
+                </li>
+                <li>🚚 Fast delivery across multiple locations</li>
+                <li>
+                  📞 Reliable customer support for a stress-free shopping
+                  journey
+                </li>
+                <p>
+                  At Nija Mart, we don’t just sell products — we deliver trust
+                  and value. Join thousands of happy customers today and shop
+                  smarter with us! Our dedicated support team is always ready to
+                  assist you with any inquiries or issues you may have, ensuring
+                  a smooth shopping experience from start to finish.
+                </p>
+              </ul>
+            </div>
+          </div>
+
+          <div class="register">
+            <button class="login">👤Login</button>
+            <button class="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="signUp-modal">
+          <div class="modal-content1">
+            <span id="closeSignUp" class="close-btn">&times;</span>
+            <h2>Create Your Account</h2>
+            <form class="signUp-form">
+              <label>Full Name</label> <br />
+              <input type="text" class="name" placeholder="Enter your name" />
+              <br />
+              <span class="error" id="nameError"></span> <br />
+
+              <label>Email</label> <br />
+              <input type="text" class="email" placeholder="Enter your email" />
+              <br />
+              <span class="error" id="emailError"></span> <br />
+
+              <label>Phone Number</label> <br />
+              <input
+                type="text"
+                class="phone"
+                placeholder="Enter your phone number"
+              />
+              <br />
+              <span class="error" id="phoneError"></span> <br />
+
+              <label>Password</label> <br />
+              <input
+                type="text"
+                class="password"
+                placeholder="Enter your password"
+              />
+              <br />
+              <span class="error" id="passwordError"></span> <br />
+
+              <label>Confirm Password</label> <br />
+              <input
+                type="text"
+                class="confirm-password"
+                placeholder="Confirm your password"
+              />
+              <br />
+              <span class="error" id="confirmPasswordError"></span> <br />
+
+              <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            <p>
+              Already have an account? <a href="#" id="showLogin">Sign In</a>
+            </p>
+          </div>
+        </div>
+        <div class="login-modal">
+          <div class="modal-content2">
+            <span id="closeLogin" class="close-btn">&times;</span>
+            <h2>Welcome Back</h2>
+            <form class="login-form">
+              <label>Email</label> <br />
+              <input type="text" class="email" placeholder="Enter your email" />
+              <br />
+              <span class="error" id="emailError"></span> <br />
+
+              <label>Password</label> <br />
+              <input
+                type="text"
+                class="password"
+                placeholder="Enter your password"
+              />
+              <br />
+              <span class="error" id="passwordError"></span> <br />
+
+              <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+            <p>
+              Don't have an account? <a href="#" id="showSignUp">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
